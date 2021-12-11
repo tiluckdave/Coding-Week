@@ -983,7 +983,7 @@ div label[for=ui-component-toggle__yearly] {
   TYPOGRAPHY
   ------------------------------------------------------------*/
 
-  .ui-text-intro { font-size: var(--ui-typography-h4); }
+  .ui-text-intro { font-size: var(--ui-typography-h5); }
 
   /*------------------------------------------------------------
   LAYOUT
