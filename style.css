@@ -278,7 +278,7 @@ svg {
   color: var(--ui-color-brand);
 }
 
-.ui-component-button-big,
+.ui-component-button-big, 
 .ui-component-button-normal { padding: .75rem 1rem .875rem; }
 
 .ui-component-button-big { width: 100%; }
