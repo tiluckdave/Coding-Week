@@ -162,6 +162,10 @@ a {
   text-decoration-color: var(--ui-color-typography-note);
 }
 
+.blue {
+  color: var(--ui-color-brand);
+}
+
 h1,
 h2,
 h4,
