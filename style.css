@@ -150,6 +150,7 @@ body {
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -643,48 +644,104 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .abso-img {
-  position: absolute;
+  position: relative;
+  margin-top: -2rem;
   width: 300px;
 }
 
 .img-abso-2{
-  left: 150px;
-  bottom: -80px;
+  float: left;
+  margin-left: 150px;
   transform: rotate(45deg);
 }
 .img-abso-1{
-  right: 100px;
-  bottom: -80px;
+  float: right;
+  margin-right: 150px;
   transform: rotate(-45deg);
+}
+@media screen and (max-width: 1366px) {
+  .abso-img {
+    position: relative;
+    width: 275px;
+    margin-top: -2rem;
+  }
+  .img-abso-2{
+    float: left;
+    margin-left: 75px;
+    transform: rotate(45deg);
+  }
+  .img-abso-1{
+    float: right;
+    margin-right: 75px;
+    transform: rotate(-45deg);
+  }
 }
 @media screen and (max-width: 1200px) {
   .abso-img {
+    position: relative;
     width: 250px;
-    bottom: 100px;
+    margin-top: -2rem;
   }
   .img-abso-2{
-    left: 100px;
+    float: left;
+    margin-left: 75px;
     transform: rotate(45deg);
   }
   .img-abso-1{
-    right: 50px;
+    float: right;
+    margin-right: 75px;
     transform: rotate(-45deg);
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1065px) {
   .abso-img {
-    width: 250px;
-    bottom: 50px;
+    width: 225px;
+    margin-top: -1.5rem;
   }
   .img-abso-2{
-    left: 50px;
+    float: left;
+    margin-left: 25px;
     transform: rotate(45deg);
   }
   .img-abso-1{
-    right: 50px;
+    float: right;
+    margin-right: 25px;
     transform: rotate(-45deg);
   }
 }
+@media screen and (max-width: 916px) {
+  .abso-img {
+    width: 200px;
+    margin-top: -1rem;
+  }
+  .img-abso-2{
+    float: left;
+    margin-left: 25px;
+    transform: rotate(45deg);
+  }
+  .img-abso-1{
+    float: right;
+    margin-right: 25px;
+    transform: rotate(-45deg);
+  }
+}
+@media screen and (max-width: 866px) {
+  .abso-img {
+    width: 150px;
+    margin-top: -0.5rem;
+  }
+  .img-abso-2{
+    float: left;
+    margin-left: 25px;
+    transform: rotate(45deg);
+  }
+  .img-abso-1{
+    float: right;
+    margin-right: 25px;
+    transform: rotate(-45deg);
+  }
+}
+
 @media screen and (max-width: 769px) {
   .abso-img {
     display: none;
@@ -699,7 +756,7 @@ div label[for=ui-component-toggle__yearly] {
     right: 50px;
     transform: rotate(-45deg);
   }
-}
+} 
   
 
 
